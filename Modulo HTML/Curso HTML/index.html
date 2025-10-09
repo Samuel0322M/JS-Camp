@@ -1,25 +1,172 @@
 <!DOCTYPE html> <!-- Esto le indica al navegador que este documento es un html -->
 <html lang="es"> <!--   -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <meta name="description" content="Portafolio de Samuel Marin">
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <img src="./images/icon.png" alt="logo del portafolio de Samuel Marin Sanchez", width="60"> <h2>Portafolio Nightwalker</h2>
+        <img src="./images/icon.png" alt="logo del portafolio de Samuel Marin Sanchez" , width="60">
+        <h2>Portafolio Nightwalker</h2>
 
         <nav>
-            <a href="">Inicio</a>
-            <a href="">Repositorios</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#repositorios">Repositorios</a>
             <a href="">Experiencia</a>
         </nav>
 
     </header>
-    
+
     <main>
+
+        <dialog id="dialog">
+            <h1>esta es una moda</h1>
+            <p>presiona el boton para cerrar la modal</p>
+            <button id="hidemodal">Cerrar modal</button>
+        </dialog>
+
+        <button id="mostrarmodal">Abrir modal</button>
+
+        <script>
+            window.mostrarmodal.addEventListener('click', () => {
+                window.dialog.showModal()
+            })
+
+            window.hidemodal.addEventListener('click', () => {
+                window.dialog.close()
+            })
+        </script>
+
+        <section>
+            <header>
+                <img src="" alt="">
+                <h1 id="inicio">
+                    Desarrollador Junior Frontend
+                </h1>
+            </header>
+            <footer>
+                <p>
+                    Experiencia en HTML, CSS, JavasSript, React, Dart y Flutter
+                </p>
+            </footer>
+        </section>
+
+
+
+        <section>
+            <header>
+                <h2 id="repositorios">Proyectos Realizados</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, ipsum non a animi nihil
+                    reprehenderit, est dolores exercitationem blanditiis minus delectus dignissimos, velit ad illo amet
+                    ullam laborum pariatur earum?</p>
+            </header>
+
+
+            <footer>
+                <article>
+                    <img src="./images/flor_icono.webp" alt="">
+                    <h3>Pagina de aniversario</h3>
+                    <p>
+                        Pagina animada de aniversario usando HTML, CSS y JavasSript
+                    </p>
+                    <a href="https://github.com/Samuel0322M/aniversario/tree/main">link</a>
+
+
+                </article>
+                <article>
+                    <img src="./images/imcIcon (1).png" alt="">
+                    <h3>Aplicacion calculadora IMC</h3>
+                    <p>
+                        Aplicacion movil que permite calcular el IMC
+                    </p>
+
+                    <a href="https://github.com/Samuel0322M/flutter_imc">link</a>
+                </article>
+
+                <article>
+                    <img src="./images/icon_quiz.jpg" alt="">
+                    <h3>Pagina web quiz</h3>
+                    <p>Pagina web quiz con preguntas sencillas</p>
+                    <a href="https://github.com/Samuel0322M/Quiz">link</a>
+                </article>
+            </footer>
+        </section>
+
+        <aside>
+            <h4>Mis Tecnologias Favoritas</h4>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Flutter</li>
+            </ul>
+        </aside>
+
+        <section>
+            
+            <header>
+            <h3>Preguntas frecuentes</h3>
+            </header>
+
+            <footer>
+            <details>
+                <summary>¿Cuales son tus canciones favoritas?</summary>
+                <p>
+                    live and learn
+                </p>
+            </details>
+            <details>
+                <summary>¿Cuantos años tienes?</summary>
+                <p>
+                    19 añitos
+                </p>
+            </details>
+            <details>
+                <summary>¿Cuales son tus juegos favoritos?</summary>
+                <p>
+                    Zelda Breath of the wild, hollow knight
+                </p>
+            </details>
+            </footer>
+        </section>
+
+        <br>
+
+        <section>
+            <form action="/" method="post">
+                <fieldset>
+                    <legend>
+                        Informacion adicional
+                    </legend>
+                    <div>
+                    <label>
+                    Nombre:
+                        <input type="text" placeholder="name" name="name" required>
+                    </label>
+                    </div>
+                    <div>
+                    <label>
+                        Correo:
+                        <input type="email" placeholder="email@gmail.com" name="email" required>
+                    </label>
+                    </div>
+                    <div>
+                    <label>
+                        Numero:
+                        <input type="tel", placeholder="telefono", name="telefono">
+                    </label>
+                    </div>
+                </fieldset>
+                <button>Enviar informacion</button>
+            </form>
+        </section>
+
 
     </main>
 
@@ -27,4 +174,5 @@
         <small>&copy; Derechos reservados</small>
     </footer>
 </body>
+
 </html>
