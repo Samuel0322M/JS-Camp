@@ -49,9 +49,10 @@ de 1 px */
     color: var(--text-primary);
     border-bottom: 1px solid var(--border);
     padding: 1.2rem 0;
+
 }
 
-.header_container{
+.header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +61,7 @@ de 1 px */
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+
 }
 
 /*Se seleccionan todas las etiquetas nav dentro del header y se centran se les da
@@ -75,10 +77,11 @@ de 1 px */
 }
 
 .header h2 {
-     font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--primary-light);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-light);
 }
+
 /*dentro de la etiqueta nav las etiquetas a van a tener un text decoration none
     un color segun la variable, una transicion de color de 2 milisegundos, un ancho
     de 500 y un tamaño de 1.2 rem, adicional cuando se coloque el mouse encima tendra
@@ -99,23 +102,43 @@ de 1 px */
 }
 
 
-.main {
-    text-align: center;
-    padding: 2.5rem;
+main > section:nth-child(1) {
 
-}
+    height: 500px; /*La altura que va a tener el contenedor*/
+    display: flex; /*convertir de block a flex para poder centrar los datos*/
+    justify-content: center; /*centrar los datos verticalmente*/
+    align-items: center; /**/
+    text-align: center; /**/
+    flex-direction: column; /* como se encuentra en flex*/
+    
+    /**/
+    & > img {
+        position: absolute; /**/
+        object-fit: cover; /**/
+        z-index: -1; /**/
+        width: 100%; /**/
+        height: 100%; /**/
+        opacity: 65%; /**/ 
+        left: 0; /**/
+        margin:  0; /**/
+        mask-image: linear-gradient(to bottom, rgba(16, 25, 34, 1) 5%, rgba(16, 25, 34, 0) 80%); /**/
+    }
 
-h1 {
-    margin-bottom: 1.5rem;
-    font-size: 2.5rem
-}
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 1000;
+        padding-bottom: 1.5rem;
+        color: var(--text-primary);
+    }
 
-footer>p {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
+    p {
+        font-size: 1.5rem;
+        color: var(--text-secondary);
+    }
 }
 
 .container-proyects {
+    padding-top: 70px;
     display: flex;
     justify-content: center;
 }
@@ -141,7 +164,7 @@ footer>p {
     margin: 1.5rem;
     border-radius: 5%;
     padding: 1.1rem;
-    box-shadow: #020e1a;
+    box-shadow: 5px 8px 23px var(--shadow);
 }
 
 .card a {
@@ -163,8 +186,8 @@ footer>p {
     margin-bottom: 1.5rem;
 }
 
-.card a h3:hover, 
-.card a h3:focus{
+.card a h3:hover,
+.card a h3:focus {
     color: var(--primary-hover);
     transition: color 0.2s;
 }
@@ -172,4 +195,26 @@ footer>p {
 .card p {
     color: var(--text-secondary);
     font-size: 1.1rem;
+}
+
+aside {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+aside img {
+    height: 5rem;
+}
+
+aside img:hover {
+    height: 6.5rem;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+
+
+.footer-container {
+    background-color: var(--background-header);
+    height: 3rem;
 }
