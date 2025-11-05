@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevJobs - Resultados de busqueda</title>
+    <link rel="stylesheet" href="/styles/resultados-busqueda-style.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="/index-main.html">DevJobs</a>
+            <h1>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <a href="/index-main.html">DevJobs</a>
+            </h1>
             <a href="#">Inicio</a>
             <a href="#">Empleos</a>
             <a href="#">Empresas</a>
             <a href="#">Salarios</a>
         </nav>
 
-        <button>Subir CV</button>
-        <img src="/Curso HTML/images/icon.png" alt="" width="45">
+        <div class="box-cv">
+            <button>Subir CV</button>
+            <img src="/Modulo HTML/Curso HTML/images/icon.png" alt="" width="45">
+        </div>
     </header>
 
     <main>
         <section>
-            
+
             <header>
-            <h1>
-                Encuentra tu próximo trabajo
-            </h1>
-            <p>
-                Explorar miles de oportunidades en el sector tecnológico.
-            </p>
+                <h1>
+                    Encuentra tu próximo trabajo
+                </h1>
+                <p>
+                    Explorar miles de oportunidades en el sector tecnológico.
+                </p>
             </header>
 
             <footer>
-            <form role="search" type="post">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-search">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                </svg>
-                <input type="text" placeholder="Buscar trabajos, empresas o habilidades">
-            </form>
+                <form role="search" type="post">
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <input type="text" placeholder="Buscar trabajos, empresas o habilidades">
+                    </div>
+                </form>
 
-            <select>
-            <option selected value="" hidden>Tecnologias</option>
-            <option value="React">React</option>
-            <option value="Flutter">Flutter</option>
-            <option value="JavaScript">JavaScript</option>
-            </select>
+                <select>
+                    <option selected value="" hidden>Tecnologias</option>
+                    <option value="React">React</option>
+                    <option value="Flutter">Flutter</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
 
-            <select>
-            <option selected value="" hidden>Ubicacion</option>
-            <option value="España">España</option>
-            <option value="Colombia">Colombia</option>
-            <option value="HomeOffice">HomeOffice</option>
-            </select>
+                <select>
+                    <option selected value="" hidden>Ubicacion</option>
+                    <option value="España">España</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="HomeOffice">HomeOffice</option>
+                </select>
 
-            <select>
-            <option selected value="" hidden>Tipo de contrato</option>
-            <option value="Termino_Indefinido">Termino indefinido</option>
-            <option value="Prestacion_de_servicios">Prestacion de Servicios</option>
-            <option value="Freelance">Freelance</option>
-            </select>
+                <select>
+                    <option selected value="" hidden>Tipo de contrato</option>
+                    <option value="Termino_Indefinido">Termino indefinido</option>
+                    <option value="Prestacion_de_servicios">Prestacion de Servicios</option>
+                    <option value="Freelance">Freelance</option>
+                </select>
 
-            <select>
-            <option selected value="" hidden>Nivel de Experiencia</option>
-            <option value="Junior">Junior</option>
-            <option value="Senior">Senior</option>
-            </select>
+                <select>
+                    <option selected value="" hidden>Nivel de Experiencia</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
 
             </footer>
         </section>
@@ -84,7 +98,9 @@
                 </header>
                 <footer>
                     <p>
-                       Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React, y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación. 
+                        Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                        JavaScript, React, y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener
+                        buenas habilidades de comunicación.
                     </p>
                 </footer>
             </article>
@@ -97,7 +113,8 @@
                 </header>
                 <footer>
                     <p>
-                       Estamos buscando un analista de datos con experienca en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, python y R. 
+                        Estamos buscando un analista de datos con experienca en el manejo de grandes conjuntos de datos
+                        y herramientas de visualización. Se requiere conocimiento en SQL, python y R.
                     </p>
                 </footer>
             </article>
@@ -110,7 +127,8 @@
                 </header>
                 <footer>
                     <p>
-                       Buscamos un desarrolador de aplicaciones móviles con experiencia en IOS y/o Andrioid. El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario. 
+                        Buscamos un desarrolador de aplicaciones móviles con experiencia en IOS y/o Andrioid. El
+                        candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.
                     </p>
                 </footer>
             </article>
@@ -123,7 +141,9 @@
                 </header>
                 <footer>
                     <p>
-                       Estamos buscando un ingeniero de DevOps con experiencia en la gestion de infraestrucutra en la nube, automatizacion de procesos y herramientas de integracion continua, Se requiere conocimientos en AWS, Azure o GCP. 
+                        Estamos buscando un ingeniero de DevOps con experiencia en la gestion de infraestrucutra en la
+                        nube, automatizacion de procesos y herramientas de integracion continua, Se requiere
+                        conocimientos en AWS, Azure o GCP.
                     </p>
                 </footer>
             </article>
@@ -145,6 +165,7 @@
         </nav>
 
     </footer>
-    
+
 </body>
+
 </html>
