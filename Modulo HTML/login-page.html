@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/login-style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            DevJobs
+        </h1>
+
+        <!--la etiqueta nav es de navegacion, google y lectores de pantalla lo reconocen como naveación principal-->
+        <nav>
+            <a href="">Buscar</a>
+            <a href="">Empresas</a>
+            <a href="">Sobre nosotros</a>
+        </nav>
+        <!-- a significa anchor que traduce ancla de crear un enlance, href = hypertext reference -->
+        <div class="botton-work">
+            <a href="">Publicar un empleo</a>
+            <a href="">Iniciar Sesion</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Bienvenido de regreso</h1>
+        <p>Inicia sesion para encontrar tu proxima oportunidad</p>
+
+        <section>
+
+            <form role="log">
+
+                <div class="inputs-box">
+                    <div class="input">
+                        <!--  -->
+
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path d="M18 7V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v3H3v14h18V7zM8 4h8v3H8zm11 15H5V9h14z" />
+                            <path d="M11 14.722V17h2v-2.278a2 2 0 1 0-2 0z" />
+                        </svg> -->
+                        <input type="password" placeholder="Password">
+                    </div>
+                </div>
+
+
+                <fieldset>
+                    <div class="remember-box">
+                        <label>
+                            <input type="checkbox" name="remember">
+                            Recuérdame
+                        </label>
+                    </div>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </fieldset>
+
+
+                <button type="submit">Iniciar sesion</button>
+            </form>
+
+            
+            <p>¿no tienes una cuenta?</p>
+
+            <div class="buttons-logins">
+                <button>Iniciar sesion como desarrollador</button>
+                <button>Iniciar sesion como empresa</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
