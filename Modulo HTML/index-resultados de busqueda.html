@@ -43,58 +43,63 @@
                 </p>
             </header>
 
-            <footer>
+            <div class="search-box">
                 <form role="search" type="post">
                     <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                        <path d="M21 21l-6 -6" />
-                    </svg>
-                    <input type="text" placeholder="Buscar trabajos, empresas o habilidades">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
+                        <input type="text" placeholder="Buscar trabajos, empresas o habilidades">
                     </div>
                 </form>
 
-                <select>
-                    <option selected value="" hidden>Tecnologias</option>
-                    <option value="React">React</option>
-                    <option value="Flutter">Flutter</option>
-                    <option value="JavaScript">JavaScript</option>
-                </select>
+                <fieldset>
+                    <select>
+                        <option selected value="" hidden>Tecnologias</option>
+                        <option value="React">React</option>
+                        <option value="Flutter">Flutter</option>
+                        <option value="JavaScript">JavaScript</option>
+                    </select>
 
-                <select>
-                    <option selected value="" hidden>Ubicacion</option>
-                    <option value="España">España</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="HomeOffice">HomeOffice</option>
-                </select>
+                    <select>
+                        <option selected value="" hidden>Ubicacion</option>
+                        <option value="España">España</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="HomeOffice">HomeOffice</option>
+                    </select>
 
-                <select>
-                    <option selected value="" hidden>Tipo de contrato</option>
-                    <option value="Termino_Indefinido">Termino indefinido</option>
-                    <option value="Prestacion_de_servicios">Prestacion de Servicios</option>
-                    <option value="Freelance">Freelance</option>
-                </select>
+                    <select>
+                        <option selected value="" hidden>Tipo de contrato</option>
+                        <option value="Termino_Indefinido">Termino indefinido</option>
+                        <option value="Prestacion_de_servicios">Prestacion de Servicios</option>
+                        <option value="Freelance">Freelance</option>
+                    </select>
 
-                <select>
-                    <option selected value="" hidden>Nivel de Experiencia</option>
-                    <option value="Junior">Junior</option>
-                    <option value="Senior">Senior</option>
-                </select>
+                    <select>
+                        <option selected value="" hidden>Nivel de Experiencia</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </fieldset>
 
-            </footer>
         </section>
 
         <section>
             <h2>Resultados de búsqueda</h2>
 
+
+            <div class="result-box">
             <article>
                 <header>
+                    <div class="result-text">
                     <h4>Ingeniero de Software</h4>
                     <small>Tech Solutions Inc. | Remoto</small>
-                    <button> Aplicar</button>
+                    </div>
+                    <button>Aplicar</button>
                 </header>
                 <footer>
                     <p>
@@ -107,9 +112,11 @@
 
             <article>
                 <header>
-                    <h4>Analista de Datos</h4>
-                    <small>Data Driven Co. | Ciudad de México</small>
-                    <button> Aplicar</button>
+                    <div class="result-text">
+                        <h4>Analista de Datos</h4>
+                        <small>Data Driven Co. | Ciudad de México</small>
+                    </div>
+                    <button>Aplicar</button>
                 </header>
                 <footer>
                     <p>
@@ -121,8 +128,10 @@
 
             <article>
                 <header>
+                    <div class="result-text">
                     <h4>Desarrollador de Aplicaciones Móviles</h4>
                     <small>Mobile Apps Ltd. | Guadalajara</small>
+                    </div>
                     <button> Aplicar</button>
                 </header>
                 <footer>
@@ -135,8 +144,10 @@
 
             <article>
                 <header>
+                    <div class="result-text">
                     <h4>Ingeniero de DevOps</h4>
                     <small>Cloud Services. | Remoto</small>
+                    </div>
                     <button> Aplicar</button>
                 </header>
                 <footer>
@@ -147,8 +158,10 @@
                     </p>
                 </footer>
             </article>
+            </div>
 
         </section>
+        </div>
     </main>
 
     <footer>
@@ -160,12 +173,10 @@
                 <li><a href="">3</a></li>
                 <li><a href="">4</a></li>
                 <li><a href="">5</a></li>
-                <li><a href="#">&raquo;;</a></li>
+                <li><a href="#">&raquo;</a></li>
             </ul>
         </nav>
-
     </footer>
 
 </body>
-
 </html>
