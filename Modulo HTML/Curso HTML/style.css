@@ -212,9 +212,18 @@ aside img:hover {
     box-shadow: 0 4px 12px var(--shadow);
 }
 
-
-
 .footer-container {
     background-color: var(--background-header);
     height: 3rem;
+}
+
+main > section:nth-child(5){
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+main > section:nth-child(5) > h3 {
+    font-size: 1.5rem;
 }
